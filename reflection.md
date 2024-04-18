@@ -19,3 +19,21 @@
   I think if we did a lab similar to the one page example in the webdev to get more of a feel for html and its syntax, and more practice with the many different semantics and attributes.
 
 ### Accessibility
+
+- #### Were you able to complete the excercises on your own or did you use the videos or the solutions for help?
+
+  Yes I was able to complete the excercise on my own, I did use the video to check my work, I have some div's for the email and and name, and I used a button
+  but added a type=submit instead of doing an input like the video.
+
+- #### How helpful did you find the excercises in this section? Was there one exercise that was particularly helpful?
+
+  This was only a little helpful, it feels a little redudant, as we have done the 04-form in the semantics HW1 already, and 04-form.html in lab 1 so which we've already
+  had to install wave and wave check it and use the w3 validation website for checking our html.
+
+- #### Was there something that you wish had been explained better?
+
+  No.
+
+- #### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+  No, there was suffient work before hand from lab1 and semantics hw1 to know how to this weeks lab.

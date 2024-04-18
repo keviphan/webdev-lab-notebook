@@ -8,21 +8,35 @@
   </head>
   <body>
     <h1>01 - Form</h1>
-    <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
-      <br /><br />
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
+    <!-- added do something for no error on w3-->
+    <form action="do_something">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
       <br />
-      <button>Submit</button>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <br />
+
+      <fieldset>
+        <legend>Favorite Character</legend>
+        <input type="radio" name="favorite_c" id="spongebob" />
+        <label for="spongebob">Spongebob</label>
+        <br />
+        <input type="radio" name="favorite_c" id="patrick" />
+        <label for="patrick">Patrick</label>
+        <br />
+        <input type="radio" name="favorite_c" id="sandy" />
+        <label for="sandy">Sandy</label>
+        <br />
+      </fieldset>
+      <br />
+      <!-- video answer - <input type="submit" value="Submit"/> -->
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
