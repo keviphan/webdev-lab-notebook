@@ -13,7 +13,7 @@ Recreate the snapshot below, using ordered and unordered lists and an anchor ele
 
 ## <a id="ex02"></a> Exercise 02 - Images
 
-Recreate the snapshot below, using two images (200x150) from [placekitten](http://placekitten.com/) and [placepuppy](https://place-puppy.com/). Make sure you add captions below the image using `figure` and `figcaption`. Every non-decorate image should have an "alt" attribute describing the contents of the image.
+Recreate the snapshot below, using two images (200x150). The images in the screenshot comes from [placekitten](http://placekitten.com/) and [placepuppy](https://place-puppy.com/), but you can use any image generator. Make sure you add captions below the image using `figure` and `figcaption`. Every non-decorate image should have an "alt" attribute describing the contents of the image.
 
 <img src="../_assets/html-exercises/html-ex02-images.png" height=200 alt="screenshot of a page with figure and img elements">
 
