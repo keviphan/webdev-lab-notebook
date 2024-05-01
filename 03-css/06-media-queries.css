@@ -1,3 +1,80 @@
+/*nav bar itself, make it fixed, top left, 100% width, and black background*/
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: var(--black);
+}
+
+/*make it clear that we are only applying to ul's that are child of nav*/
+/*change the list style type to none - in devtools its disc*/
+/*reset its margin and padding to 0*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*make the li's in the ul that is in nav itself, inlinbe-block so they sit next side by side*/
+/*inside user agent, the display is list-item*/
+nav ul li {
+  display: inline-block;
+  /*width: 120px;
+  /*absolute sizing - pixels - flexible sizing - ems*/
+  /*
+  margin: 1em;
+  width: 120px;
+  /*0.5 em for the top and bottom, and 1em for left and right*/
+  /*padding: 0.5em 1em; */
+}
+
+nav ul li a {
+  display: block;
+  /*width: 100%;*/
+  padding: 1em;
+  /*margin: 1em;*/
+  text-decoration: none;
+  color: white;
+}
+
+/*psuedo class*/
+/*applied hover on the li, we have some padding left on the ul*/
+nav ul li a:hover {
+  background-color: gray;
+}
+
+.main {
+  margin-top: 100px;
+
+  /*makes the parmesan more inline with home*/
+  padding: 0 0.5em;
+}
+
+body {
+  background-color: purple;
+  color: var(--white);
+}
+
+@media (max-width: 414px) {
+  nav ul li {
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 220px;
+  }
+}
+
+/*eveyrthing in between mobile and 1024*/
+/*don't need to specify the max bound, as the 1024 catches it*/
+@media (min-width: 415px) {
+  body {
+    background: orange;
+    color: var(--black);
+  }
+}
+
 @media (min-width: 1024px) {
   body {
     background: var(--green);

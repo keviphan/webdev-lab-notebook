@@ -10,12 +10,48 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
+/*this has 0,1,1 specificity over 0,0,2 of section li, so will make it red*/
+/*existence, if its an li with any class, make it red*/
+/*li[class] {
   color: var(--red);
+}*/
+
+/*eqaulity, li with matching equal id of cat*/
+li[id="cat"] {
+  color: var(--teal);
+}
+
+/*prefix, li with class starting with p for parrot*/
+/*green from other css file in styles*/
+li[class^="p"] {
+  color: var(--green);
+}
+
+/*substring, li with class that contains substring 'do'*/
+/*this will make dog royalblue also, but we want it violet*/
+/*make the violet from li suffix higher precedence by moving below the substring 'do'*/
+li[class*="do"] {
+  color: var(--royalblue);
+}
+
+/*suffix, li with class that ends in a g, ie dog and hedgehog*/
+li[class$="g"] {
+  color: var(--darkmagenta);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
+/*any li child of a section will be green*/
 section li {
   color: var(--green);
+}
+
+/*general sibling selector, makes all of first sibilings magenta, but not itself*/
+.first ~ li {
+  color: var(--darkmagenta);
+}
+
+/*adjacent sibling selector for class "second", gets the next sibling*/
+.second + li {
+  color: var(--royalblue);
 }

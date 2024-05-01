@@ -1,25 +1,74 @@
 /* Specificity Exercise */
 
+/*
+X - ID selectors
+Y - attribute selectors, class selectors, psuedo-classes
+Z - elements, psuedo elements
+*/
+
+/*
+X - 
+Y - .list-item 
+Z - nav, a  
+
+0,1,2
+*/
+/*> selector - a is a child of nav*/
 nav .list-item > a {
   color: var(--purple);
 }
 
+/*
+X - #main
+Y - 
+Z - ::first-letter
+
+1,0,1
+*/
 #main::first-letter {
   color: var(--purple);
 }
 
+/*
+X -  
+Y - [type]
+Z - input
+
+0,1,1
+*/
 input[type] {
   color: var(--purple);
 }
 
+/*
+X - 
+Y - .main
+Z - section, ::first-line 
+
+0,1,2
+*/
 section .main::first-line {
   color: var(--purple);
 }
 
-nav ul.menu li#first a:not([class='visited']) {
+/*
+X - #first
+Y - .menu, [class='visited'] 
+Z - nav, ul, li, a
+
+1,2,4
+*/
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
 
+/*
+X - 
+Y - 
+Z - 10
+
+0,0,10
+*/
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }

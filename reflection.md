@@ -37,3 +37,23 @@
 - #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
   No, there was suffient work before hand from lab1 and semantics hw1 to know how to this weeks lab.
+
+### CSS
+
+- #### Were you able to complete the excercises on your own or did you use the videos or the solutions for help?
+
+  I was able to do 01 somewhat, but ended up refering to videos to double check my work, 02 I was also able to do, but also refered to video and saw Caterina added a hover so matched it.
+  I was also able to do 03 specificity. 04,05,06 I watched the videos, I probably could have refered to notes and code_samples, but didn't as the videos with Caterina explaining probably
+  saved me more time, 06 was 50 mins so I realized it was probably a lot to do on my own so just went with vids.
+
+- #### How helpful did you find the excercises in this section? Was there one exercise that was particularly helpful?
+
+  I think all of the excercises were helpful, gets your hands and feet wet enough with CSS.
+
+- #### Was there something that you wish had been explained better?
+
+  No.
+
+- #### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+  No, all of the excercises were just right to get feet wet with CSS.

@@ -2,3 +2,14 @@
   width: 600px;
   margin: 40px auto;
 }
+
+/*psuedo element*/
+p::first-letter {
+  font-size: 200%;
+  /*3em, 1em is 16 pixels, 3em is 48pixels*/
+}
+
+/*psuedo class - state of an element*/
+p:hover {
+  background-color: lightskyblue;
+}
