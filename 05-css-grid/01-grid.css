@@ -50,6 +50,6 @@
 }
 
 .grid-container-4 .item6 {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 /* use height: 600px; on the container */
