@@ -57,3 +57,57 @@
 - #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
   No, all of the excercises were just right to get feet wet with CSS.
+
+### Flexbox
+
+- #### Were you able to complete the excercises on your own or did you use the videos or the solutions for help?
+
+  I was able to complete the first 3 containers, only had a little hiccup with container 4. But I still watched the videos to double check my work.
+
+- #### How helpful did you find the excercises in this section? Was there one exercise that was particularly helpful?
+
+  I found it pretty helpful, just doing it with the boxxed numbers and no content yet is a good way to see how each of the flex elements worked.
+
+- #### Was there something that you wish had been explained better?
+
+  No.
+
+- #### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+  No.
+
+### CSS Grid
+
+- #### Were you able to complete the excercises on your own or did you use the videos or the solutions for help?
+
+  Yes, I was able to complete 01 grid on my own. 02 grid, I had to refer to the video.
+
+- #### How helpful did you find the excercises in this section? Was there one exercise that was particularly helpful?
+
+  I think this was very helpful as it showed us how we can add in responsiveness with grids.
+
+- #### Was there something that you wish had been explained better?
+
+  No.
+
+- #### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+  No.
+
+### Bootstrap
+
+- #### Were you able to complete the excercises on your own or did you use the videos or the solutions for help?
+
+  This one I just went straight to the videos, as the "syntax" since I don't really know the syntax for bootstrap, so I just followed the video.
+
+- #### How helpful did you find the excercises in this section? Was there one exercise that was particularly helpful?
+
+  I found it very helpful in giving us an intro into bootstrap, the syntax, and just seeing how Caterina coded showed some shortcuts to vscode etc
+
+- #### Was there something that you wish had been explained better?
+
+  No.
+
+- #### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+  No.
