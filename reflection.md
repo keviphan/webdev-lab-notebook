@@ -111,3 +111,22 @@
 - #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
   No.
+
+### Javascript
+
+- #### Were you able to complete the excercises on your own or did you use the videos or the solutions for help?
+
+  I just went straight to the videos to see how Caterina does the code, I probably would have been able to complete 01/02/03 by spending
+  extra time looking for methods and reviewing the slides, but I was on a time crunch so decided to refer to videos right away.
+
+- #### How helpful did you find the excercises in this section? Was there one exercise that was particularly helpful?
+
+  I found 06 fetch very helpful, first time fetching an api. They were all pretty helpful as its an intro to javascript.
+
+- #### Was there something that you wish had been explained better?
+
+  No.
+
+- #### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+  No.

@@ -1,41 +1,82 @@
 const characters = [
-  { id: 1, name: 'Arya', house: 'Stark' },
-  { id: 4, name: 'Sansa', house: 'Stark' },
-  { id: 16, name: 'Eddard', house: 'Stark' },
-  { id: 17, name: 'Catelyn', house: 'Stark' },
-  { id: 20, name: 'Robb', house: 'Stark' },
-  { id: 28, name: 'Rickon', house: 'Stark' },
-  { id: 40, name: 'Jaime', house: 'Lannister' },
-  { id: 41, name: 'Cersei', house: 'Lannister' },
-  { id: 42, name: 'Tyrion', house: 'Lannister' },
-  { id: 50, name: 'Tywin', house: 'Lannister' },
-  { id: 53, name: 'Kevan', house: 'Lannister' },
-  { id: 75, name: 'Daenerys', house: 'Targaryen' },
-  { id: 77, name: 'Viserys', house: 'Targaryen' },
-  { id: 81, name: 'Rhaegar', house: 'Targaryen' },
-  { id: 83, name: 'Theon', house: 'Greyjoy' },
-  { id: 84, name: 'Yara', house: 'Greyjoy' },
-  { id: 87, name: 'Davos', house: 'Seaworth' },
-  { id: 88, name: 'Brienne', house: 'Tarth' },
+  { id: 1, name: "Arya", house: "Stark" },
+  { id: 4, name: "Sansa", house: "Stark" },
+  { id: 16, name: "Eddard", house: "Stark" },
+  { id: 17, name: "Catelyn", house: "Stark" },
+  { id: 20, name: "Robb", house: "Stark" },
+  { id: 28, name: "Rickon", house: "Stark" },
+  { id: 40, name: "Jaime", house: "Lannister" },
+  { id: 41, name: "Cersei", house: "Lannister" },
+  { id: 42, name: "Tyrion", house: "Lannister" },
+  { id: 50, name: "Tywin", house: "Lannister" },
+  { id: 53, name: "Kevan", house: "Lannister" },
+  { id: 75, name: "Daenerys", house: "Targaryen" },
+  { id: 77, name: "Viserys", house: "Targaryen" },
+  { id: 81, name: "Rhaegar", house: "Targaryen" },
+  { id: 83, name: "Theon", house: "Greyjoy" },
+  { id: 84, name: "Yara", house: "Greyjoy" },
+  { id: 87, name: "Davos", house: "Seaworth" },
+  { id: 88, name: "Brienne", house: "Tarth" },
 ];
 
 const mapNameFamily = (characters) => {
   // Return an array with the name and house of each character
   // Format: "Arya, of House Stark"
 
-  return characters;
+  const nameFamily = characters.map(
+    (item) => `${item.name}, of House ${item.house}`
+  );
+
+  return nameFamily;
 };
 
 const filterFamily = (characters, house) => {
   // Return an array with only the characters from a given house
 
-  return characters;
+  const houses = characters.filter((item) => item.house === house);
+
+  return houses;
 };
 
 const reduceHouses = (characters) => {
   // Return an object with the number of characters from each house
 
-  return characters;
+  // const sum = characters.reduce((acc, curr) => acc + curr.id, 0);
+
+  /*
+  const obj = {
+    Stark: 0,
+    Lannister: 0,
+    Targaryen: 0,
+    Greyjoy: 0,
+    Seaworth: 0,
+    Tarth: 0,
+  };
+  */
+
+  //works - rather not hard code - easier to do below
+  //start with empty object, and add as we go along
+  const houses = characters.reduce((acc, curr) => {
+    //if our accumulator has a specific key/poperty - increment
+
+    //instead of seeing this type of conditional
+    //ternary condition - literally called it as I was watching
+
+    /*
+    if (acc.hasOwnProperty(curr.house)) {
+      acc[curr.house]++;
+    } else {
+      acc[curr.house] = 1;
+    }
+    */
+
+    //shortcut
+    acc.hasOwnProperty(curr.house) ? acc[curr.house]++ : (acc[curr.house] = 1);
+
+    return acc;
+  }, {});
+
+  return houses;
 };
 
 console.log(mapNameFamily(characters));
@@ -60,7 +101,7 @@ console.log(mapNameFamily(characters));
 //   'Brienne, of House Tarth'
 // ]
 
-console.log(filterFamily(characters, 'Stark'));
+console.log(filterFamily(characters, "Stark"));
 // [
 //   { id: 1, name: 'Arya', house: 'Stark' },
 //   { id: 4, name: 'Sansa', house: 'Stark' },
@@ -70,7 +111,7 @@ console.log(filterFamily(characters, 'Stark'));
 //   { id: 28, name: 'Rickon', house: 'Stark' }
 // ]
 
-console.log(filterFamily(characters, 'Greyjoy'));
+console.log(filterFamily(characters, "Greyjoy"));
 // [
 //   { id: 83, name: 'Theon', house: 'Greyjoy' },
 //   { id: 84, name: 'Yara', house: 'Greyjoy' }
