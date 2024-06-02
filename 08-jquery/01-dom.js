@@ -1,3 +1,4 @@
+/*
 // Exercise #1:
 // When the user clicks the 'copy' button, copy the user input to the output area
 
@@ -15,7 +16,9 @@ function handleClick(event) {
   console.log('click event', event);
   output1.textContent = userInput1.value;
 }
+*/
 
+/*
 // Option #2
 // document.getElementById('copy').onclick = () => {
 //   let userInput = document.getElementById('userInput1');
@@ -30,7 +33,9 @@ function handleClick(event) {
 //     'userInput1'
 //   ).value;
 // };
+*/
 
+/*
 // Exercise #2:
 // When the user enters input text, copy the user input to the output area
 
@@ -46,3 +51,26 @@ function handleInput(event) {
   console.log('click event', event);
   output2.textContent = userInput2.value;
 }
+*/
+
+//jquery
+//check if our document is ready - our dom - check if all
+//elements have been created
+
+$("document").ready(() => {
+  //fetch our user input
+  //fetch copy - add event listener
+  //fetch the output
+
+  //fetch copy event, add event listener and do everything inside
+  $("#copy").on("click", (event) => {
+    console.log("Click event", event);
+    $("#output1").text($("#userInput1").val());
+  });
+});
+
+$("document").ready(() => {
+  $("#userInput2").on("input", () => {
+    $("#output2").text($("#userInput2").val());
+  });
+});

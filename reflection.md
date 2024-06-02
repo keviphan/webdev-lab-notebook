@@ -130,3 +130,24 @@
 - #### Were there other exercises that might have helped you learn this week’s topic a little better?
 
   No.
+
+### Jquery
+
+- #### Were you able to complete the excercises on your own or did you use the videos or the solutions for help?
+
+  I went straight to the videos, I know I should be trying to do these on my own at first
+  but I'd rather just see how Caterina does it as how she does it is how it is used in
+  industry.
+
+- #### How helpful did you find the excercises in this section? Was there one exercise that was particularly helpful?
+
+  Very helpful, it showed how powerful jquery is and how it simplified what we did in
+  07-javascript.
+
+- #### Was there something that you wish had been explained better?
+
+  No.
+
+- #### Were there other exercises that might have helped you learn this week’s topic a little better?
+
+  No.
